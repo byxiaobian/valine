@@ -36,6 +36,7 @@ jobs:
         echo `date +"%Y-%m-%d %H:%M:%S"` begin > time.log
     - name: Commit #更新日志到GitHub仓库
       run: |
+        git pull https://github.com/byxiaobian/valine.git master
         git config --global user.email AutoWakeUp@email.com
         git config --global user.name AutoWakeUp
         git add .
