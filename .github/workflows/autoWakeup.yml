@@ -38,7 +38,6 @@ jobs:
       run: |
         git config --global user.email AutoWakeUp@email.com
         git config --global user.name AutoWakeUp
-        git pull https://github.com/byxiaobian/valine.git master
         git add .
         git commit -m "Successfully Wake" -a
     - name: Push changes
